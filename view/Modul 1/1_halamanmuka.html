@@ -5,13 +5,13 @@
 		    <title>AKREDITASI PROGRAM STUDI</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <style>
           body{
               background-color: rgb(39, 37, 37);
@@ -45,46 +45,70 @@
             width:100%;
             height: 30%;
           }
-      </style>
+        </style>
         <!-- Header -->
         <div class = "w3-container w3-flat-peter-river">	
-        <div class="w3-container  w3-cell">
-        <img src = "images/Logo-UNPAR.png" style="width : 100px; margin: 10px">
-        </div>
-        <div class = "w3-container w3-flat-peter-river w3-cell">
+          <div class="w3-container  w3-cell">
+            <img src = "images/Logo-UNPAR.png" style="width : 100px; margin: 10px">
+          </div>
+          <div class = "w3-container w3-flat-peter-river w3-cell">
             <hr>
             <h1>AKREDITASI PROGRAM STUDI</h1>
             <hr>
-        </div>
-        <div class="w3-container  w3-flat-peter-river w3-cell">
+          </div>
+          <div class="w3-container  w3-flat-peter-river w3-cell">
             <p style = "margin-top: 30px; text-align: left" >Program Studi Teknik Informatika</p>
             <p style = "margin: 0px; text-align: left ">Universitas Katolik Parahyangan</p>
-        </div>
-    <br>
-    <!-- Search Tab -->
-        <div class="search-container" style = "float: right; margin-top: -7.5%;">
+          </div>
+          <br>
+          <!-- Search Tab -->
+          <div class="search-container" style = "float: right; margin-top: -7.5%;">
             <form action="/action_page.php">
               <input type="text" placeholder="Search.." name="search">
               <button type="submit"><i class="fa fa-search" style = "color: black;"></i></button>
             </form>
           </div>
-    </div>
-</head>
-<body>
-  <!-- Navigation bar -->
-    <div class="topnav">
-        <a href="#home">HOME</a>
-        <a href="#visimisi">VISI DAN MISI</a>
-        <a href="#kerja">KERJASAMA</a>
-        <a href="#mhs">MAHASISWA</a>
-        <a href="#sdm">SUMBER DAYA MAHASISWA</a>
-        <a href="#keuangan">KEUANGAN</a>
-        <a href="#sdp">SARANA DAN PRASARANA</a>
-        <a href="#pendidikan">PENDIDIKAN</a>
-        <a href="#penelitian">PENELITIAN</a>
-        <a href="#pdk">PENGABDIAN KEPADA MASYARAKAT</a>
-        <a href="#ldct">LUARAN DAN CAPAIAN TRIDHARMA</a>
-      </div>
+        </div>
+      </head>
+      
+      <body>
+        <!-- Navigation bar -->
+        <div class="top">
+            <div class="w3-bar w3-card" style="background-color: rgb(68, 64, 64); color: white;">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="2_VisiMisi.html" class="w3-bar-item w3-button w3-padding-large">VISI MISI</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KERJASAMA</a>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">MAHASISWA <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#" class="w3-bar-item w3-button">INPUT MAHASISWA</a>
+                        <a href="#" class="w3-bar-item w3-button">MAHASISWA ASING</a>
+                    </div>
+                </div>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SUMBER DAYA MANUSIA</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KEUANGAN</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SARANA DAN PRASARANA</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PENDIDIKAN</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PENELITIAN</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PENGABDIAN KEPADA MASYARAKAT</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LUARAN DAN CAPAIAN TRIDHARMA</a>
+                <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="2_VisiMisi.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VISI MISI</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">KERJASAMA</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MAHASISWA</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SUMBER DAYA MANUSIA</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">KEUANGAN</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SARANA DAN PRASARANA</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PENDIDIKAN</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PENELITIAN</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PENGABDIAN KEPADA MASYARAKAT</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LUARAN DAN CAPAIAN TRIDHARMA</a>
+        </div>
       <br><br><br><br><br><br>
       <!-- Carousel -->
     <div class="container">

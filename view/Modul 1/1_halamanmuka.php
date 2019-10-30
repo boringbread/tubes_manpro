@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include '../header.php'; ?>
       <!-- Carousel -->
     <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:70%; margin-left: 15%; margin-top:-3%">

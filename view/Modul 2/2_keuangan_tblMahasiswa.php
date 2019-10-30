@@ -19,6 +19,14 @@
 
 </head>
 <body>
+        <?php
+            include "connection.php";
+
+            $temp = new SQL();
+            $query = "EXEC [Tabel4_PenggunaanDana]";
+            $res = $temp->executeStoredProcedure($query,[]);
+        ?>
+
     <table>
         <tr>
             <th rowspan="2" style="text-align: center"><b>No.</b></th>
@@ -36,32 +44,35 @@
             <td><b>TS</b></td>
             <td><b>Rata-rata</b></td>
         </tr>
-        <tr>
-            <td style="text-align: center">1</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">3</td>
-            <td style="text-align: center">4</td>
-            <td style="text-align: center">5</td>
-            <td style="text-align: center">6</td>
-            <td style="text-align: center">7</td>
-            <td style="text-align: center">8</td>
-            <td style="text-align: center">9</td>
-            <td style="text-align: center">10</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">1</td>
-            <td>Biaya Operasional Pendidikan</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
+        <?php
+           $counter = 0;
+           for($x=0; $x<sizeof($res); $x++){
+               echo "<tr>";
+               echo "<td>".$res[$x][$counter]."</td>";
+               $counter++;
+               echo "<td>".$res[$x][$counter]."</td>";
+               $counter++;
+               echo "<td>".$res[$x][$counter]."</td>";
+               $counter++;
+               echo "<td>".$res[$x][$counter]."</td>";
+               $counter++;
+               echo "<td>".$res[$x][$counter]."</td>";
+               $counter++;
+               echo "<td>".$res[$x][$counter]."</td>";
+               $counter++;
+               echo "<td>".$res[$x][$counter]."</td>";
+               $counter++;
+               echo "<td>".$res[$x][$counter]."</td>";
+               $counter++;
+               echo "<td>".$res[$x][$counter]."</td>";
+               $counter++;
+               echo "<td>".$res[$x][$counter]."</td>";
+               $counter++;
+               echo "</tr>";
+               $counter=0;
+           } 
+        ?>
+        <!-- <tr>
             <td>a. Biaya Dosen (Gaji, Honor)</td>
             <td></td>
             <td></td>
@@ -73,7 +84,6 @@
             <td></td>
         </tr>
         <tr>
-            <td></td>
             <td>b. Biaya Tenaga Kependidikan (Gaji, Honor)</td>
             <td></td>
             <td></td>
@@ -85,7 +95,6 @@
             <td></td>
         </tr>
         <tr>
-            <td></td>
             <td>c. Biaya Operasional Pembelajaran (Bahan dan Peralatan Habis Pakai)</td>
             <td></td>
             <td></td>
@@ -97,7 +106,6 @@
             <td></td>
         </tr>
         <tr>
-            <td></td>
             <td>d. Biaya Operasional Tidak Langsung (Listrik, Gas, Air, Pemeliharaan Gedung, Pemeliharaan Sarana, Uang Lembur, Telekomunikasi, Konsumsi, Transport Lokal, Pajak, Asuransi, dll.)</td>
             <td></td>
             <td></td>
@@ -223,7 +231,7 @@
             <td></td>
             <td></td>
             <td></td>
-        </tr>
+        </tr> -->
     </table>
 </body>
 </html>

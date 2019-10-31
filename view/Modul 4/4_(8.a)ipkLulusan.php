@@ -22,13 +22,6 @@
             <th>Maks</th>
           </tr>
           <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-          </tr>
-          <tr>
             <td>TS-1</td>
             <td></td>
             <td></td>

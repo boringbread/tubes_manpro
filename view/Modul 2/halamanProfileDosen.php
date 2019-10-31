@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include '../header.php'; ?>
     <style>
         table, th, td {
             border: 1px solid black;
@@ -7,6 +7,9 @@
         th, td {
             padding: 5px;
             text-align: left;
+        }
+        body{
+            color: white;
         }
     </style>
 
@@ -34,7 +37,7 @@
             </tr>
             
             <?php
-                include "connection.php";
+                include "../connection.php";
 
                 $temp = new SQL();
                 $query = "EXEC [Tabel3a1_DosenTetapUPPS]";

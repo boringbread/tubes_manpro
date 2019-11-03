@@ -104,7 +104,7 @@
                   <div class="w3-dropdown-content w3-bar-block w3-card-4">
                       <a href="../Modul 4/4_(8.a)ipkLulusan.php" class="w3-bar-item w3-button">CAPAIAN PEMBELAJARAN</a>
                       <a href="../Modul 4/4_(8.b.1)prestasiAkademik.php" class="w3-bar-item w3-button">PRESTASI MAHASISWA</a>
-                      <a href="#" class="w3-bar-item w3-button">EFEKTIVITAS DAN PRODUKTIVITAS PENDIDIKAN</a>
+                      <a href="../Modul 4/" class="w3-bar-item w3-button">EFEKTIVITAS DAN PRODUKTIVITAS PENDIDIKAN</a>
                       <a href="#" class="w3-bar-item w3-button">DAYA SAING LULUSAN</a>
                       <a href="#" class="w3-bar-item w3-button">KINERJA LULUSAN</a>
                       <a href="#" class="w3-bar-item w3-button">LUARAN PENELITIAN DAN PKM MAHASISWA</a>

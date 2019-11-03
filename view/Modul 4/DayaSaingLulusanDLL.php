@@ -1,30 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
-    <title>Daya Saing Lulusan Program Diploma III</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 5px;
-        }
-        th{
-            text-align: center;
-        }
-        table{
-            margin-left: 20%;
-            margin-right: 20%;
-            width: 60%;
-            margin-top: 7%;
-        }
-        h1{
-            text-align: center;
-        }
-    </style>
-</head>
+<?php include '../header.php' ?>
+<style type="text/css">
+    body{
+        color: white;
+    }
+</style>
 <body>
     <h1><b>Daya Saing Lulusan Program Diploma Tiga</b></h1>
     <table>

@@ -13,7 +13,7 @@
         }
     </style>
 
-    <div class="tabel3a1">
+    <div class="w3-container">
         <h4>
             Tabel 3.a.1) Dosen Tetap Perguruan Tinggi yang ditugaskan sebagai pengampu mata kuliah di Program Studi yang diakreditasi
         </h4>
@@ -37,7 +37,7 @@
             </tr>
             
             <?php
-                include "../connection.php";
+                include "../../connection.php";
 
                 $temp = new SQL();
                 $query = "EXEC [Tabel3a1_DosenTetapUPPS]";
@@ -104,7 +104,7 @@
                     <th>Rata-rata</th>
                 </tr>
                 <?php
-                include "connection.php";
+                // include "connection.php";
 
                 $temp = new SQL();
                 $query = "EXEC Tabel3a2_DosenPembimbingUtamaTugasAkhir";
@@ -150,6 +150,7 @@
         <h4>
             Tabel 3.a.4) Dosen Tidak Tetap yang ditugaskan sebagai pengampu mata kuliah di Program Studi yang Diakreditasi
         </h4>
+        <div class="w3-container">
         <table>
                 <tr>
                     <th>No.</th>
@@ -164,7 +165,7 @@
                     <th>Kesesuaian Bidang Keahlian dengan Mata Kuliah yang Diampu 7)</th>
                 </tr>
                 <?php
-                    include "connection.php";
+                    // include "connection.php";
 
                     $temp = new SQL();
                     $query = "EXEC Tabel3a4_DosenTidakTetapUPPS";
@@ -173,7 +174,7 @@
                     $counter = 0;
                     for($x = 0; $x < sizeof($res); $x++){
                         echo "<tr>";
-                        echo "<td>".$index."</td>";
+                        // echo "<td>".$index."</td>";
                         $index++;
                         echo "<td>".$res[$x][$counter]."</td>";
                         $counter++;
@@ -193,12 +194,15 @@
                         $counter++;
                         echo "<td>".$res[$x][$counter]."</td>";
                         $counter++;
+
+                        echo "<td>".$res[$x][$counter]."</td>";
+                        $counter++;
                         echo "</tr>";
                         $counter = 0;
                     }
                 
                 ?>
-            </table>  
+            </table> </div> 
     </div>
 
     <div class="tabel3a5">

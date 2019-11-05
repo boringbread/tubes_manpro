@@ -34,11 +34,12 @@
 <body>
     <table>
         <tr>
-            <th rowspan="1">Jenis</th>
+            <th rowspan="1">No</th>
+            <th rowspan="1">jenisPublikasi</th>
             <th colspan="1">ts2</th>
             <th rowspan="1">ts1</th>
             <th rowspan="1">ts</th>
-            <th rowspan="1">Jumlah</th>
+            <th rowspan="1">jumlah</th>
         </tr>
 
        
@@ -167,12 +168,14 @@ dalam forum di tingkat internasional</th>
                 include "../../connection.php";
 
                 $temp = new SQL();
-                $query = "EXEC [Tabel8f1_partJurnalMahasiswa]";
+                $query = "EXEC [Tabel8f1_PartSeminarMahasiswa]";
                 $res = $temp->executeStoredProcedure($query,[]);
 
                 $counter = 0;
                 for($x=0; $x<sizeof($res); $x++){
                     echo "<tr>";
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
                     echo "<td>".$res[$x][$counter]."</td>";
                     $counter++;
                     echo "<td>".$res[$x][$counter]."</td>";

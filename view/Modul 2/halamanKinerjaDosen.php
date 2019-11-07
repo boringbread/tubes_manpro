@@ -38,8 +38,14 @@
                 $counter = 0;
                 for($x=0; $x<sizeof($res); $x++){
                     echo "<tr>";
-                    echo "<td>".$index."</td>";
-                    $index++;
+                    // echo "<td>".$index."</td>";
+                    // $index++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
                     echo "<td>".$res[$x][$counter]."</td>";
                     $counter++;
                     echo "<td>".$res[$x][$counter]."</td>";
@@ -85,10 +91,10 @@
                     $counter++;
                     echo "<td>".$res[$x][$counter]."</td>";
                     $counter++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
+                    // echo "<td>".$res[$x][$counter]."</td>";
+                    // $counter++;
+                    // echo "<td>".$res[$x][$counter]."</td>";
+                    // $counter++;
                     echo "<td>".$res[$x][$counter]."</td>";
                     $counter=0;
                     echo "</tr>";
@@ -158,15 +164,15 @@
             $counter = 0;
             for($x=0; $x<sizeof(res); $x++){
                 echo "<tr>";
-                echo "<td>".$res[$res][$counter]."</td>"
+                echo "<td>".$res[$res][$counter]."</td>";
                 $counter++;
-                echo "<td>".$res[$res][$counter]."</td>"
+                echo "<td>".$res[$res][$counter]."</td>";
                 $counter++;
-                echo "<td>".$res[$res][$counter]."</td>"
+                echo "<td>".$res[$res][$counter]."</td>";
                 $counter++;
-                echo "<td>".$res[$res][$counter]."</td>"
+                echo "<td>".$res[$res][$counter]."</td>";
                 $counter++;
-                echo "<td>".$res[$res][$counter]."</td>"
+                echo "<td>".$res[$res][$counter]."</td>";
                 $counter=0;
                 echo "</tr>";
             }

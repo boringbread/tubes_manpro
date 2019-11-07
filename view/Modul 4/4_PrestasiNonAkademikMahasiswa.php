@@ -1,31 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
-    <title>Prestasi Nonakademik</title>
-    <style>
+<?php
+    include "../header.php";
+?>
+
+<style>
         table, th, td {
             border: 1px solid black;
             border-collapse: collapse;
         }
         th, td {
             padding: 5px;
+            text-align: left;
         }
-        th{
-            text-align: center;
-        }
-        table{
-            margin-left: 20%;
-            margin-right: 20%;
-            width: 60%;
-            margin-top: 7%;
-        }
-        h1{
-            text-align: center;
+        body{
+            color: white;
         }
     </style>
-</head>
-<body>
+
     <h1><b>Prestasi Nonakademik</b></h1>
     <table>
         <tr>
@@ -40,31 +30,59 @@
             <th class="w3-flat-belize-hole">Nasional</th>
             <th class="w3-flat-belize-hole">Internasional</th>
         </tr>
-        <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7</th>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td> 
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td colspan="3" style="text-align: center;"><b> Jumlah</b></td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td class="w3-flat-belize-hole"> </td> 
-        </tr>
+        
+        <?php
+                include "../../connection.php";
+
+                $temp = new SQL();
+                $query = "SELECT * FROM prestasi_mhs WHERE Akademik = 'Non-akademik'";
+                $res = $temp->executeSelectQuery($query,[]);
+
+                $index = 1;
+                $counter = 0;
+                for($x=0; $x<sizeof($res); $x++){
+                    echo "<tr>";
+                    echo "<td>".$index."</td>";
+                    $index++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+
+                    if($res[$x][$counter]=="Lokal"){
+                        echo "<td> v </td>";
+                        $counter++;
+                        echo "<td></td>";
+                        // $counter++;
+                        echo "<td></td>";
+                        // $counter++;                    
+                    }
+                    
+                    else if($res[$x][$counter]=="Internasional"){
+                        echo "<td></td>";
+                        $counter++;
+                        echo "<td></td>";
+                        // $counter++;
+                        echo "<td>v</td>";
+                        // $counter++;                    
+                    }
+
+                    else if($res[$x][$counter]=="Nasional"){
+                        echo "<td></td>";
+                        $counter++;
+                        echo "<td>v</td>";
+                        // $counter++;
+                        echo "<td></td>";
+                        // $counter++;                           
+                    }
+                    
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    
+                    $counter=0;
+                }
+            ?>
+
     </table>
 </body>
 </html>

@@ -38,7 +38,7 @@
             <th rowspan="2" style="text-align: center"><b>Jumlah Sitasi</b></th>
         </tr>
 
-        <tr>
+        <!-- <tr>
         </tr>
         
         <tr>
@@ -81,7 +81,27 @@
             <td colspan="2" style="text-align: center"><b>Jumlah</b></td>
             <td></td>
             <td></td>
-        </tr>
+        </tr> -->
+        <?php
+            include "../../connection.php";
+            $temp = new SQL();
+            $query = "EXEC [Tabel8f1_partJurnalMahasiswa]";
+            $res = $temp->executeStoredProcedure($query,[]);
+            $counter = 0;
+            for($x=0; $x<sizeof($res); $x++){
+                echo "<tr>";
+                echo "<td>".$res[$x][$counter]."</td>";
+                $counter++;
+                echo "<td>".$res[$x][$counter]."</td>";
+                $counter++;
+                echo "<td>".$res[$x][$counter]."</td>";
+                $counter++;
+                echo "<td>".$res[$x][$counter]."</td>";
+                $counter++;
+                echo "</tr>";
+                $counter=0;
+            }
+        ?>
     </table>
 </body>
 </html>

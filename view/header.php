@@ -73,7 +73,7 @@
         <div class="top">
             <div class="w3-bar w3-card" style="background-color: rgb(68, 64, 64); color: white;">
                 <a href="../Modul 1/2_VisiMisi.php" class="w3-bar-item w3-button w3-padding-large">VISI MISI</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KERJASAMA</a>
+                <a href="../Modul 1/3_kerjasama.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KERJASAMA</a>
                 <div class="w3-dropdown-hover w3-hide-small">
                   <button class="w3-padding-large w3-button" title="More">MAHASISWA <i class="fa fa-caret-down"></i></button>
                   <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -85,7 +85,7 @@
                   <button class="w3-padding-large w3-button" title="More">SUMBER DAYA MANUSIA <i class="fa fa-caret-down"></i></button>
                   <div class="w3-dropdown-content w3-bar-block w3-card-4">
                       <a href="../Modul 2/halamanProfileDosen.php" class="w3-bar-item w3-button">PROFIL DOSEN</a>
-                      <a href="#" class="w3-bar-item w3-button">KINERJA DOSEN</a>
+                      <a href="../Modul 2/halamanKinerjaDosen.php" class="w3-bar-item w3-button">KINERJA DOSEN</a>
                   </div>
                 </div>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KEUANGAN, SARANA DAN PRASARANA</a>
@@ -112,4 +112,4 @@
                 </div>
             </div>
         </div>
-      <br><br><br><br><br><br>
+      <br><br>

@@ -42,7 +42,7 @@
                 $query = "EXEC [Tabel8f1_partJurnalMahasiswa]";
                 $res = $temp->executeStoredProcedure($query, []);
 
-                $index =
+                $index = 1;
                 $counter = 0;
                 for ($x = 0; $x < sizeof($res); $x++) {
                         echo "<tr>";
@@ -87,7 +87,7 @@
                 $query = "EXEC [Tabel8f1_PartSeminarMahasiswa]";
                 $res = $temp->executeStoredProcedure($query, []);
 
-                $index =
+                $index = 1;
                 $counter = 0;
                 for ($x = 0; $x < sizeof($res); $x++) {
                         echo "<tr>";

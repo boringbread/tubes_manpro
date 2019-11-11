@@ -1,8 +1,9 @@
 <?php include '../header.php'; ?>
     <style>
         table, th, td {
-            border: 1px solid black;
+            border: 1px solid white;
             border-collapse: collapse;
+            color: white;
         }
         th, td {
             padding: 5px;
@@ -10,13 +11,18 @@
         }
         body{
             color: white;
+            /* background-color: white; */
+        }
+        h1{
+            color: white
         }
     </style>
+<body>
 
-    <div class="w3-container">
-        <h4>
-            Tabel 3.a.1) Dosen Tetap Perguruan Tinggi yang ditugaskan sebagai pengampu mata kuliah di Program Studi yang diakreditasi
-        </h4>
+    <h1 class="w3-border-buttom">Profile Dosen</h1>
+    <button onclick="showCont('tabel3a1')" class="w3-button w3-block w3-left-align">
+    Tabel 3.a.1) Dosen Tetap Perguruan Tinggi yang ditugaskan sebagai pengampu mata kuliah di Program Studi yang diakreditasi
+    <div style="overflow-x:auto" id="tabel3a1" class="w3-container w3-hide">
         <table>
             <tr>
                 <th rowspan=2>No</th>
@@ -77,35 +83,34 @@
             ?>
         </table>
     </div>
+</button>
 
-    <div class="tabel3a2">
-        <h4>
-            Tabel 3.a.2) Dosen Pembimbing Utama Tugas Akhir 
-        </h4>
+<button onclick="showCont('tabel3a2')" class="w3-button w3-block w3-left-align">
+    Tabel 3.a.2) Dosen Pembimbing Utama Tugas Akhir 
+    <div style="overflow-x:auto" id="tabel3a2" class="w3-container w3-hide"> 
         <table>
             <tr>
-                    <th rowspan=3>No.</th>
-                    <th rowspan=3>Nama Dosen</th>
-                    <th colspan=8>Jumlah Mahasiswa yang Dibimbing</th>
-                    <th rowspan=3>Rata-rata Jumlah Bimbingan di semua Program/Semester</th>
+                <th rowspan=3>No.</th>
+                <th rowspan=3>Nama Dosen</th>
+                <th colspan=8>Jumlah Mahasiswa yang Dibimbing</th>
+                <th rowspan=3>Rata-rata Jumlah Bimbingan di semua Program/Semester</th>
             </tr>
             <tr>
-                    <th colspan=4>pada PS yang Diakreditasi</th>
-                    <th colspan=4>pada PS Lain di PT</th>
+                <th colspan=4>pada PS yang Diakreditasi</th>
+                <th colspan=4>pada PS Lain di PT</th>
             </tr> 
-                <tr>
-                    <th>TS-2</th>
-                    <th>TS-1</th>
-                    <th>TS</th>
-                    <th>Rata-rata</th>
-                    <th>TS-2</th>
-                    <th>TS-1</th>
-                    <th>TS</th>
-                    <th>Rata-rata</th>
-                </tr>
-                <?php
-                // include "connection.php";
+            <tr>
+                <th>TS-2</th>
+                <th>TS-1</th>
+                <th>TS</th>
+                <th>Rata-rata</th>
+                <th>TS-2</th>
+                <th>TS-1</th>
+                <th>TS</th>
+                <th>Rata-rata</th>
+            </tr>
 
+            <?php
                 $temp = new SQL();
                 $query = "EXEC Tabel3a2_DosenPembimbingUtamaTugasAkhir";
                 $res = $temp->executeStoredProcedure($query,[]);
@@ -139,18 +144,21 @@
                     $counter=0;
                 }
                 ?>
-            </table>
+        </table>
     </div>
+</button>
 
-    <div class="tabel3a3">
-        
+<button onclick="showCont('tabel3a3')" class="w3-button w3-block w3-left-align">
+    Tabel 3.a.3)
+    <div style="overflow-x:auto" id="tabel3a3" class="w3-container w3-hide">
+        <table>
+        </table>
     </div>
+</button>
 
-    <div class="tabel3a4">
-        <h4>
-            Tabel 3.a.4) Dosen Tidak Tetap yang ditugaskan sebagai pengampu mata kuliah di Program Studi yang Diakreditasi
-        </h4>
-        <div class="w3-container">
+<button onclick="showCont('tabel3a4')" class="w3-button w3-block w3-left-align">
+        Tabel 3.a.4)Dosen Tidak Tetap yang ditugaskan sebagai pengampu mata kuliah di Program Studi yang Diakreditasi
+        <div style="overflow-x:auto" id="tabel3a4" class="w3-container w3-hide">
         <table>
                 <tr>
                     <th>No.</th>
@@ -165,8 +173,6 @@
                     <th>Kesesuaian Bidang Keahlian dengan Mata Kuliah yang Diampu 7)</th>
                 </tr>
                 <?php
-                    // include "connection.php";
-
                     $temp = new SQL();
                     $query = "EXEC Tabel3a4_DosenTidakTetapUPPS";
                     $res = $temp->executeStoredProcedure($query,[]);
@@ -174,7 +180,6 @@
                     $counter = 0;
                     for($x = 0; $x < sizeof($res); $x++){
                         echo "<tr>";
-                        // echo "<td>".$index."</td>";
                         $index++;
                         echo "<td>".$res[$x][$counter]."</td>";
                         $counter++;
@@ -200,14 +205,30 @@
                         echo "</tr>";
                         $counter = 0;
                     }
-                
                 ?>
-            </table> </div> 
-    </div>
+            </table> 
+        </div>
+</button>
 
-    <div class="tabel3a5">
+<button onclick="showCont('tabel3a5')" class="w3-button w3-block w3-left-align">
+    tabel 3.a.5)
+    <div style="overflow-x:auto" id="tabel3a5" class="w3-container w3-hide">
 
     </div>
+</button>
+
+<script>
+    function showCont(id){
+    var x = document.getElementById(id);
+
+        if(x.className.indexOf("w3-show")==-1){
+            x.className+="w3-show";
+        }
+        else{
+            x.className+= x.className.replace("w3-show","");
+        }
+    }
+</script>
 </body>
 </html>
 

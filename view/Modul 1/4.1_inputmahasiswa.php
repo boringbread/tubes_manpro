@@ -23,7 +23,7 @@
                     }
             </style>
     <body>
-    <h3>Kualitas Input Mahasiswa</h3>
+    <h3 style="color: white;">Kualitas Input Mahasiswa</h3>
         <table style= "background-color: lightgrey">
             <tr>
                 <th rowspan="2">Tahun Akademik</th>

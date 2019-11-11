@@ -77,7 +77,7 @@
                 <div class="w3-dropdown-hover w3-hide-small">
                   <button class="w3-padding-large w3-button" title="More">MAHASISWA <i class="fa fa-caret-down"></i></button>
                   <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                      <a href="#" class="w3-bar-item w3-button">KUALITAS INPUT MAHASISWA</a>
+                      <a href="../Modul 1/4.1_inputmahasiswa.php" class="w3-bar-item w3-button">KUALITAS INPUT MAHASISWA</a>
                       <a href="#" class="w3-bar-item w3-button">MAHASISWA ASING</a>
                   </div>
                 </div>

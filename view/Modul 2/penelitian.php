@@ -81,7 +81,62 @@
 <button onclick="showCont('tabel6b')" class="w3-button w3-block w3-left-align">
     Tabel 6.b) Penelitian DTPS yang menjadi rujukan tema tesis/disertasi
     <div style="overflow-x:auto" id="tabel6b" class="w3-container w3-hide"> 
-        <!-- isi table 6.b disini -->
+        <table>
+                <tr>
+                    <th rowspan="2">No.</th>
+                    <th rowspan="2">Nama Dosen</th>
+                    <th rowspan="2">Tema Penelitian sesuai Roadmap</th>
+                    <th rowspan="2">Nama Mahasiswa</th>
+                    <th rowspan="2">Judul tesis/Disertai</th>
+                    <th rowspan="2">Tahun</th>
+                </tr>
+                <tr>
+
+                </tr>
+
+                <tr style="text-align: center">
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                </tr>
+
+                <tr style="text-align: center">
+                        <th>1</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                </tr>
+
+                <tr style="text-align: center">
+                        <th>2</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                </tr>
+
+                <tr style="text-align: center">
+                        <th>...</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                </tr>
+
+                <tr style="text-align: center">
+                        <th colspan="4">Jumlah</th>
+                        <th></th>
+                        <th></th>
+                </tr>
+
+        </table>
     </div>
 </button>
 

@@ -28,35 +28,34 @@
             <th>4</th>
             <th>5</th>
           </tr>
-          <tr>
-            <td>TS-1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>TS-2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>TS</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          
+          <?php
+                include "../../connection.php";
+
+                $temp = new SQL();
+                $query = "SELECT * FROM v_8a";
+                $res = $temp->executeSelectQuery($query,[]);
+
+          
+                $counter = 0;
+                for($x=0; $x<sizeof($res); $x++){
+                    echo "<tr>";
+                    echo "<td>TS".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    echo "</tr>";
+                    $counter=0;
+                   
+                }
+            ?>
           
         </table>
-
-        <div class="w3-center w3-margin">
-          <br>
-          <a href="../Modul 1/1_halamanmuka.php" class="w3-button w3-center w3-blue">KEMBALI</a>    
-             
-        </div>
     </div>
 
       

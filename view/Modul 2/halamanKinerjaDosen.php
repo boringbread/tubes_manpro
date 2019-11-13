@@ -2,14 +2,18 @@
     <style>
         table, th, td {
             border: 1px solid black;
+            border: 1px solid black;
             border-collapse: collapse;
+            color : white;
         }
         th, td {
             padding: 5px;
-            text-align: left;
         }
         body{
             color: white;
+        }
+        h1{
+            color : white;
         }
     </style>
 <body>
@@ -17,7 +21,11 @@
 
     <h1 class="w3-border-buttom">Kinerja Dosen</h1>
     <div class="w3-container">
-        <h4>3. b. 1. Pengakuan/Rekognisi DTPS</h4>
+        <h4>Tabel 3.b.1) Pengakuan/Rekognisi DTPS</h4>
+        <h1 class="w3-border-buttom">Kinerja Dosen</h1>
+        <button onclick="showcount('tabel3b1')" class="w3-button w3-block w3-left-align">
+        Tabel 3.b.1) Pengakuan/Rekognisi DTPS
+        <div style="overflow-x:auto" id="tabel3b1" class="w3-container w3-hide">
         <table>
             <tr>
                 <th rowspan="2">No.</th>
@@ -64,9 +72,13 @@
             ?>
         </table>
     </div>
+    </button>
 
-    <div class="w3-container">
-    <h4>3. b. 2. Penelitian DTPS</h4>
+    <div class="tabel3b2">
+    <h4>3.b.2) Penelitian DTPS</h4>
+    <button onclick="showcount('tabel3b2')" class="w3-button w3-block w3-left-align">
+        Tabel 3.b.2) Penelitian DTPS
+        <div style="overflow-x:auto" id="tabel3b2" class="w3-container w3-hide">
         <table>
             <tr>
                 <th rowspan="2">No.</th>
@@ -105,10 +117,13 @@
             ?>
         </table>
     </div>
-
-    <div class="w3-container">
-        <h4>3.b.3 PKM DTPS</h4>
-        <table>
+    </button>
+        <h4>3.b.3) PKM DTPS</h4>
+    <div class="tabel3b3">
+    <button onclick="showcount('tabel3b3')" class="w3-button w3-block w3-left-align">
+        Tabel 3.b.3) PKM DTPS
+        <div style="overflow-x:auto" id="tabel3b3" class="w3-container w3-hide">
+    <table>
             <tr>
                 <th rowspan="2">No.</th>
                 <th rowspan="2">Sumber Pembayaran</th>
@@ -147,6 +162,7 @@
             ?>`
         </table>
     </div>
+    </button>
 
     <div class="w3-container">
         <h4>3.b.4 Publikasi Ilmiah DTPS</h4>
@@ -190,7 +206,7 @@
     </div>
 
     <div class="w3-container">
-    <h4>3.b.5 Karya ilmiah DTPS yang disitasi dalam 3 tahun terakhir</h4>
+    <h4>3.b.5) Karya ilmiah DTPS yang disitasi dalam 3 tahun terakhir</h4>
     <table>
         <tr>
             <th rowspan = "2">No.</th>

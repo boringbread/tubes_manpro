@@ -1,6 +1,4 @@
-<?php include '../header.php' 
-?>
-
+<?php include '../header.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,16 +32,15 @@
 <body>
     <table>
         <tr>
-            <th rowspan="1">jenisPublikasi</th>
-            <th colspan="1">ts2</th>
-            <th rowspan="1">ts1</th>
-            <th rowspan="1">ts</th>
-            <th rowspan="1">jumlah</th>
+            <th rowspan="2">No.</th>
+            <th rowspan="2">Jenis</th>
+            <th colspan="3">Jumlah Judul</th>
+            <th rowspan="2">Jumlah</th>
         </tr>
 
        
 
-        <!-- </tr>
+        </tr>
             <td style="background-color:lightgrey;"><b>TS-2</td></b>
             <td  style="background-color:lightgrey;"><b>TS-1</td></b>
             <td  style="background-color:lightgrey;"><b>TS</td></b>
@@ -162,31 +159,7 @@ dalam forum di tingkat internasional</th>
         <th> </th>
         <th> </th>
 
-    </tr> -->
-    <?php
-                include "../../connection.php";
-
-                $temp = new SQL();
-                $query = "EXEC [Tabel8f1_PartSeminarMahasiswa]";
-                $res = $temp->executeStoredProcedure($query,[]);
-
-                $counter = 0;
-                for($x=0; $x<sizeof($res); $x++){
-                    echo "<tr>";
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "</tr>";
-                    $counter=0;
-                }
-            ?>
+    </tr>
 
     </table>
    

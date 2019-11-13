@@ -112,10 +112,10 @@
         <table>
         <h1> Tabel 8.f.2)Karya Ilmiah </h1>
         <tr>
-            <th rowspan="2" style="text-align: center"><b>No.</b></th>
-            <th rowspan="2" style="text-align: center"><b>Nama Mahasiswa</b></th>
-            <th rowspan="2" style="text-align: center"><b>Judul Artikel yang Disitasi (Jurnal/Buku, Volume, Tahun, Nomor, Halaman) </b></th>
-            <th rowspan="2" style="text-align: center"><b>Jumlah Sitasi</b></th>
+            <th class="w3-flat-belize-hole" rowspan="2" style="text-align: center"><b>No.</b></th>
+            <th class="w3-flat-belize-hole" rowspan="2" style="text-align: center"><b>Nama Mahasiswa</b></th>
+            <th class="w3-flat-belize-hole" rowspan="2" style="text-align: center"><b>Judul Artikel yang Disitasi (Jurnal/Buku, Volume, Tahun, Nomor, Halaman) </b></th>
+            <th class="w3-flat-belize-hole" rowspan="2" style="text-align: center"><b>Jumlah Sitasi</b></th>
         </tr>
 
         <tr>
@@ -168,11 +168,11 @@
     <table>
         <h1>Tabel 8.f.3)Produk Jasa</h1>
         <tr>
-            <th rowspan="2" style="text-align: center"><b>No.</b></th>
-            <th rowspan="2" style="text-align: center"><b>Nama Mahasiswa</b></th>
-            <th rowspan="2" style="text-align: center"><b>Nama Produk/Jasa</b></th>
-            <th rowspan="2" style="text-align: center"><b>Deskripsi Produk/Jasa</b></th>
-            <th rowspan="2" style="text-align: center"><b>Bukti</b></th>
+            <th class="w3-flat-belize-hole" rowspan="2" style="text-align: center"><b>No.</b></th>
+            <th class="w3-flat-belize-hole" rowspan="2" style="text-align: center"><b>Nama Mahasiswa</b></th>
+            <th class="w3-flat-belize-hole" rowspan="2" style="text-align: center"><b>Nama Produk/Jasa</b></th>
+            <th class="w3-flat-belize-hole" rowspan="2" style="text-align: center"><b>Deskripsi Produk/Jasa</b></th>
+            <th class="w3-flat-belize-hole" rowspan="2" style="text-align: center"><b>Bukti</b></th>
         </tr>
 
         <tr>

@@ -107,7 +107,7 @@
                       <a href="../Modul 4/" class="w3-bar-item w3-button">EFEKTIVITAS DAN PRODUKTIVITAS PENDIDIKAN</a>
                       <a href="#" class="w3-bar-item w3-button">DAYA SAING LULUSAN</a>
                       <a href="../Modul 4/4_(8.e.1)tempatKerjaLulusan.php" class="w3-bar-item w3-button">KINERJA LULUSAN</a>
-                      <a href="../Modul 4/4_(8.f.1)_tabel1_publikasiIlmiahMahasiswa.php" class="w3-bar-item w3-button">LUARAN PENELITIAN DAN PKM MAHASISWA</a>
+                      <a href="#" class="w3-bar-item w3-button">LUARAN PENELITIAN DAN PKM MAHASISWA</a>
                   </div>
                 </div>
             </div>

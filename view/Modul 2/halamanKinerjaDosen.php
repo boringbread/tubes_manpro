@@ -1,5 +1,5 @@
 <?php include '../header.php'; ?>
-<style>
+    <style>
         table, th, td {
             border: 1px solid black;
             border-collapse: collapse;
@@ -12,7 +12,10 @@
             color: white;
         }
     </style>
+<body>
+    
 
+    <h1 class="w3-border-buttom">Kinerja Dosen</h1>
     <div class="w3-container">
         <h4>3. b. 1. Pengakuan/Rekognisi DTPS</h4>
         <table>
@@ -102,9 +105,10 @@
             ?>
         </table>
     </div>
-        <h4>3.b.3 PKM DTPS</h4>
+
     <div class="w3-container">
-    <table>
+        <h4>3.b.3 PKM DTPS</h4>
+        <table>
             <tr>
                 <th rowspan="2">No.</th>
                 <th rowspan="2">Sumber Pembayaran</th>
@@ -145,7 +149,44 @@
     </div>
 
     <div class="w3-container">
-        <h4></h4>
+        <h4>3.b.4 Publikasi Ilmiah DTPS</h4>
+            <table>
+            <tr>
+                <th rowspan="2">Media Publikasi</th>
+                <th colspan="3">Jumlah Judul</th>
+                <th rowspan="2">Jumlah </th>
+            </tr>
+
+        
+            </tr>
+                <td>TS-2</td>
+                <td>TS-1</td>
+                <td>TS</td>
+            </tr>
+
+            <?php
+                $temp = new SQL();
+                $query = "EXEC [Tabel3b4_PartJurnal]";
+                $res = $temp->executeStoredProcedure($query,[]);
+                $index = 0;
+                $counter = 0;
+                for($x=0; $x<sizeof($res); $x++){
+                    echo "<tr>";
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "</tr>";
+                    $counter=0;
+                }
+            ?>
+        </table>
     </div>
 
     <div class="w3-container">
@@ -181,5 +222,66 @@
     </div>
 
     <div class="w3-container">
+        <h4>3.b.6 Produk/jasa DTPS yang diadopsi oleh industri/masyarakat</h4>
+        <table>
+            <tr>
+                <th rowspan = "2">No.</th>
+                <th rowspan = "2">Nama Dosen</th>
+                <th rowspan = "2">Nama Produk/Jasa</th>
+                <th rowspan = "2">Deskripsi Produk/Jasa</th>
+                <th rowspan = "2">Bukti</th>
+            </tr>
+            <tr>
+                <td class="nomor">1</td>
+                <td class="nomor">2</td>
+                <td class="nomor">3</td>
+                <td class="nomor">4</td>
+                <td class="nomor">5</td>
+            </tr>
+            <tr>
+                <td>2<td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3<td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4<td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5<td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="w3-container">
 
     </div>
+    <script>
+        function showCont(id){
+        var x = document.getElementById(id);
+
+            if(x.className.indexOf("w3-show")==-1){
+                x.className+="w3-show";
+            }
+            else{
+                x.className+= x.className.replace("w3-show","");
+            }
+        }
+    </script>
+</body>

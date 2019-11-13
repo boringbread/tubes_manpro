@@ -3,7 +3,7 @@
         table, th, td {
             border: 1px solid white;
             border-collapse: collapse;
-            color: white;
+            color: black;
         }
         th, td {
             padding: 5px;
@@ -143,7 +143,7 @@
                     echo "</tr>";
                     $counter=0;
                 }
-                ?>
+            ?>
         </table>
     </div>
 </button>

@@ -103,8 +103,8 @@
                   <button class="w3-padding-large w3-button" title="More">LUARAN DAN CAPAIAN TRIDHARMA <i class="fa fa-caret-down"></i></button>
                   <div class="w3-dropdown-content w3-bar-block w3-card-4">
                       <a href="../Modul 4/4_(8.a)ipkLulusan.php" class="w3-bar-item w3-button">CAPAIAN PEMBELAJARAN</a>
-                      <a href="../Modul 4/4_(8.b.1)prestasiAkademik.php" class="w3-bar-item w3-button">PRESTASI MAHASISWA</a>
-                      <a href="../Modul 4/" class="w3-bar-item w3-button">EFEKTIVITAS DAN PRODUKTIVITAS PENDIDIKAN</a>
+                      <a href="../Modul 4/PrestasiAkademik.php" class="w3-bar-item w3-button">PRESTASI MAHASISWA</a>
+                      <a href="../Modul 4/4_Efektifitas.php" class="w3-bar-item w3-button">EFEKTIVITAS DAN PRODUKTIVITAS PENDIDIKAN</a>
                       <a href="#" class="w3-bar-item w3-button">DAYA SAING LULUSAN</a>
                       <a href="../Modul 4/4_(8.e.1)tempatKerjaLulusan.php" class="w3-bar-item w3-button">KINERJA LULUSAN</a>
                       <a href="#" class="w3-bar-item w3-button">LUARAN PENELITIAN DAN PKM MAHASISWA</a>

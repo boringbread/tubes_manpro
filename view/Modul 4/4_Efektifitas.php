@@ -1,5 +1,3 @@
-<<<<<<< HEAD:view/Modul 4/4_(8.e.2)kepuasanPengguna.php
-<?php include '../header.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +27,6 @@
 
 </head>
 <body>
-=======
 <?php include "../header.php"; ?>
 <style type="text/css">
     body{
@@ -37,7 +34,6 @@
     }
 </style>
     <h1><b>Masa Studi Lulusan Program Diploma Tiga</b></h1>
->>>>>>> Modul4:view/Modul 4/4_Efektifitas.php
     <table>
         <tr>
             <th class="w3-flat-belize-hole" rowspan="2">Tahun Masuk</th>

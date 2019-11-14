@@ -37,13 +37,13 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th rowspan="2">Nomor</th>
-                                            <th rowspan="2">Semester</th>
-                                            <th rowspan="2">Kode Mata Kuliah</th>
-                                            <th rowspan="2">Nama Mata Kuliah</th>
-                                            <th rowspan="2">Mata Kuliah Kompetensi</th>
-                                            <th colspan="3">Bobot Kredit</th>
-                                            <th rowspan="2">Konversi Kredit Ke Jam</th>
+                                            <th>idMatakuliah</th>
+                                            <th>kodeMatakuliah</th>
+                                            <th>namaMataKuliah</th>
+                                            <th>bobotPemrograman</th>
+                                            <th>sks</th>
+                                            <th>semester</th>
+                                            <!-- <th rowspan="2">Konversi Kredit Ke Jam</th>
                                             <th colspan="4">Capaian Pembelajaran</th>
                                             <th rowspan="2">Dokumen Rencana Pembelajaran</th>
                                             <th rowspan="2">Unit Penyelenggara</th>
@@ -57,10 +57,10 @@
                                             <th>Keterampilan Umum</th>
                                             <th>Keterampilan Khusus</th>
 
-                                        </tr>
+                                        </tr> -->
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <!-- <tr>
                                             <td>Tiger Nixon</td>
                                             <td>System Architect</td>
                                             <td>Edinburgh</td>
@@ -110,8 +110,35 @@
                                             <td>61</td>
                                             <td>2011/04/25</td>
                                             <td>$320,800</td>
-                                        </tr>
+                                        </tr> -->
+                                        <?php
+            include "../../connection.php";
 
+            $temp = new SQL();
+            $query = "select * from MataKuliah";
+            $res = $temp->executeSelectQuery($query,[]);
+
+            $index = 1;
+            $counter = 0;
+            for($x=0; $x<sizeof($res); $x++){
+                echo "<tr>";
+                $index++;
+                echo "<td>".$res[$x][$counter]."</td>";
+                $counter++;
+                echo "<td>".$res[$x][$counter]."</td>";
+                $counter++;
+                echo "<td>".$res[$x][$counter]."</td>";
+                $counter++;
+                echo "<td>".$res[$x][$counter]."</td>";
+                $counter++;
+                echo "<td>".$res[$x][$counter]."</td>";
+                $counter++;
+                echo "<td>".$res[$x][$counter]."</td>";
+                $counter++;
+                echo "</tr>";
+                $counter=0;
+            }
+        ?>    
                                     </tbody>
                                 </table>
                             </div>

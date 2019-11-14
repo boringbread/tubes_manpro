@@ -1,9 +1,18 @@
 <?php include '../header.php' ?>
-<style type="text/css">
-  body{
-    color: white;
-  }
-</style>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }
+        body{
+            color: white;
+        }
+        
+    </style>
     <!-- YOUR TABLE HERE -->
     <div class="w3-center">
       <p class="w3-margin">Berikut data Indek Prestasi Kumulatif lulusan Unika Parahyangan dalam 3 tahun terakhir.</p>
@@ -22,38 +31,131 @@
             <th>Maks</th>
           </tr>
           <tr>
-            <td>TS-1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
           </tr>
-          <tr>
-            <td>TS-2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>TS</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          
+          <?php
+                include "../../connection.php";
+
+                $temp = new SQL();
+                $query = "SELECT * FROM v_8a";
+                $res = $temp->executeSelectQuery($query,[]);
+
+          
+                $counter = 0;
+                for($x=0; $x<sizeof($res); $x++){
+                    echo "<tr>";
+                    echo "<td>TS".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    echo "</tr>";
+
+
+                    $counter=0;
+                   
+                }
+
+              
+                
+                $dataPoints1 = array(
+                  array("label"=> "TS-2", "y"=> 57),
+                  array("label"=> "TS-1", "y"=> 48),
+                  array("label"=> "TS", "y"=> 68),
+                );
+                $dataPoints2 = array(
+                  array("label"=> "TS-2", "y"=> 2.0),
+                  array("label"=> "TS-1", "y"=> 2.1),
+                  array("label"=> "TS", "y"=> 2.0),
+                );
+                $dataPoints3 = array(
+                  array("label"=> "TS-2", "y"=> 2.9),
+                  array("label"=> "TS-1", "y"=> 3.0),
+                  array("label"=> "TS", "y"=> 2.9),
+                );
+                $dataPoints4 = array(
+                  array("label"=> "TS-2", "y"=> 3.9),
+                  array("label"=> "TS-1", "y"=> 3.9),
+                  array("label"=> "TS", "y"=> 3.8)
+                );
+            ?>
           
         </table>
 
-        <div class="w3-center w3-margin">
-          <br>
-          <a href="../Modul 1/1_halamanmuka.php" class="w3-button w3-center w3-blue">KEMBALI</a>    
-             
-        </div>
+        <br>
+        <br>
+
+        <script>
+        window.onload = function () {
+        
+        var chart = new CanvasJS.Chart("chartContainer", {
+          animationEnabled: true,
+          theme: "light2",
+          title:{
+            text: "Indek Prestasi Kumulatif lulusan Unika Parahyangan dalam 3 tahun terakhir"
+          },
+          legend:{
+            cursor: "pointer",
+            verticalAlign: "center",
+            horizontalAlign: "right",
+            itemclick: toggleDataSeries
+          },
+          data: [{
+            type: "column",
+            name: "Jumlah Lulusan",
+            indexLabel: "{y}",
+            showInLegend: true,
+            dataPoints: <?php echo json_encode($dataPoints1, JSON_NUMERIC_CHECK); ?>
+          },{
+            type: "column",
+            name: "Min. IPK",
+            indexLabel: "{y}",
+            showInLegend: true,
+            dataPoints: <?php echo json_encode($dataPoints2, JSON_NUMERIC_CHECK); ?>
+          },{          
+            type: "column",
+            name: "Rata-rata IPK",
+            indexLabel: "{y}",
+            showInLegend: true,
+            dataPoints: <?php echo json_encode($dataPoints3, JSON_NUMERIC_CHECK); ?>
+          
+            },{
+            type: "column",
+            name: "Maks. IPK",
+            indexLabel: "{y}",
+            showInLegend: true,
+            dataPoints: <?php echo json_encode($dataPoints4, JSON_NUMERIC_CHECK); ?>
+            }
+          ]
+        });
+        chart.render();
+        
+        function toggleDataSeries(e){
+          if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+            e.dataSeries.visible = false;
+          }
+          else{
+            e.dataSeries.visible = true;
+          }
+          chart.render();
+        }
+        
+        }
+        </script>
     </div>
 
       
-
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
       
 </body>
 <!-- Footer -->

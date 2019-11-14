@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
-    <title>Masa Studi Lulusan Program Diploma III</title>
+    <title>Kesesuaian Bidang Kerja Lulusan</title>
     <style>
         table, th, td {
             border: 1px solid black;
@@ -26,21 +26,19 @@
     </style>
 </head>
 <body>
-    <h1><b>Masa Studi Lulusan Program Diploma Tiga</b></h1>
+    <h1><b>Kesesuaian Bidang Kerja Lulusan</b></h1>
     <table>
         <tr>
-            <th class="w3-flat-belize-hole" rowspan="2">Tahun Masuk</th>
-            <th class="w3-flat-belize-hole" rowspan="2">Jumlah Mahasiswa Diterima <sup>1)</sup></th>
-            <th class="w3-flat-belize-hole" colspan="5">Jumlah Mahasiswa yang Lulus pada</th>
-            <th class="w3-flat-belize-hole" rowspan="2">Jumlah Lulusan s.d. Akhir TS</th>
-            <th class="w3-flat-belize-hole" rowspan="2">Rata-rata Masa Studi</th>
+            <th class="w3-flat-belize-hole" rowspan="2">Tahun Lulus</th>
+            <th class="w3-flat-belize-hole" rowspan="2">Jumlah Lulusan</th>
+            <th class="w3-flat-belize-hole" rowspan="2">Jumlah <br>Lulusan <br>yang <br>Terlacak</th>
+            <th class="w3-flat-belize-hole" colspan="3">Jumlah Lulusan Terlacak dengan<br>
+                                            Tingkat Kesesuaian Bidang Kerja</th>
         </tr>
         <tr>
-            <th class="w3-flat-belize-hole">Akhir <br>TS-4</th>
-            <th class="w3-flat-belize-hole">Akhir <br>TS-3</th>
-            <th class="w3-flat-belize-hole">Akhir <br>TS-2</th>
-            <th class="w3-flat-belize-hole">Akhir <br>TS-1</th>
-            <th class="w3-flat-belize-hole">Akhir <br>TS</th>
+            <th class="w3-flat-belize-hole">Rendah <sup>1)</sup></th>
+            <th class="w3-flat-belize-hole">Sedang <sup>2)</sup></th>
+            <th class="w3-flat-belize-hole">Tinggi <sup>3)</sup></th>    
         </tr>
         <tr>
             <th>1</th>
@@ -49,16 +47,10 @@
             <th>4</th>
             <th>5</th>
             <th>6</th>
-            <th>7</th>
-            <th>8</th>
-            <th>9</th>
         </tr>
         <tr>
         <tr>
             <td>TS-4</td>
-            <td></td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -72,9 +64,6 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
         </tr>
          <tr>
             <td>TS-2</td>
@@ -83,12 +72,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
          </tr>
-        </tr>
     </table>
-    A
 </body>
 </html>

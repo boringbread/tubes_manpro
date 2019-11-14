@@ -88,7 +88,7 @@
                       <a href="#" class="w3-bar-item w3-button">KINERJA DOSEN</a>
                   </div>
                 </div>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KEUANGAN, SARANA DAN PRASARANA</a>
+                <a href="../Modul 2/2_keuangan_tblMahasiswa.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KEUANGAN, SARANA DAN PRASARANA</a>
                 <div class="w3-dropdown-hover w3-hide-small">
                   <button class="w3-padding-large w3-button" title="More">PENDIDIKAN <i class="fa fa-caret-down"></i></button>
                   <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -97,8 +97,8 @@
                       <a href="#" class="w3-bar-item w3-button">KEPUASAN MAHASISWA</a>
                   </div>
                 </div>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PENELITIAN</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PENGABDIAN KEPADA MASYARAKAT</a>
+                <a href="../Modul 2/penelitian.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PENELITIAN</a>
+                <a href="../Modul 2/2_pkm_tlbPkm" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PENGABDIAN KEPADA MASYARAKAT</a>
                 <div class="w3-dropdown-hover w3-hide-small">
                   <button class="w3-padding-large w3-button" title="More">LUARAN DAN CAPAIAN TRIDHARMA <i class="fa fa-caret-down"></i></button>
                   <div class="w3-dropdown-content w3-bar-block w3-card-4">

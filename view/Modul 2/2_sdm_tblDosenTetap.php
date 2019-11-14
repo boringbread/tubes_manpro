@@ -82,7 +82,6 @@
                     $counter++;
 					echo "</tr>";
 					
-					
                     $counter=0;
                 }
             ?>

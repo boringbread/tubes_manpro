@@ -92,9 +92,9 @@
                 <div class="w3-dropdown-hover w3-hide-small">
                   <button class="w3-padding-large w3-button" title="More">PENDIDIKAN <i class="fa fa-caret-down"></i></button>
                   <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                      <a href="#" class="w3-bar-item w3-button">KURIKULUM</a>
-                      <a href="#" class="w3-bar-item w3-button">INTEGRASI KEGIATAN PENELITIAN/PKM DALAM PEMBELAJARAN</a>
-                      <a href="#" class="w3-bar-item w3-button">KEPUASAN MAHASISWA</a>
+                      <a href="../Modul 3/3_kurikulum.php" class="w3-bar-item w3-button">KURIKULUM</a>
+                      <a href="../Modul 3/3_integrasi_kegiatan_penelitian.php" class="w3-bar-item w3-button">INTEGRASI KEGIATAN PENELITIAN/PKM DALAM PEMBELAJARAN</a>
+                      <a href="../Modul 3/3_kepuasan_mahasiswa.php" class="w3-bar-item w3-button">KEPUASAN MAHASISWA</a>
                   </div>
                 </div>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PENELITIAN</a>

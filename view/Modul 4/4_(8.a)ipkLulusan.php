@@ -31,6 +31,7 @@
             <th>Maks</th>
           </tr>
           <tr>
+
             <th>1</th>
             <th>2</th>
             <th>3</th>
@@ -88,6 +89,28 @@
                   array("label"=> "TS", "y"=> 3.8)
                 );
             ?>
+
+            <td>TS-1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>TS-2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>TS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
           
         </table>
 

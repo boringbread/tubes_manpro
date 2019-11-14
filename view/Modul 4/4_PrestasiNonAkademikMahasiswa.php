@@ -3,6 +3,7 @@
 ?>
 
 <style>
+    
         table, th, td {
             border: 1px solid black;
             border-collapse: collapse;
@@ -17,7 +18,7 @@
     </style>
 
     <h1><b>Prestasi Nonakademik</b></h1>
-    <table>
+    <table class="w3-center">
         <tr>
             <th class="w3-flat-belize-hole" rowspan="2">No</th>
             <th class="w3-flat-belize-hole" rowspan="2">Nama Kegiatan</th>

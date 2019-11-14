@@ -28,46 +28,35 @@
 			<th class="tg-wa1i">Judul Kegiatan 1)</th>
 			<th class="tg-wa1i">Tahun</th>
 		</tr>
-		<tr>
-			<td class="tg-wa1i">1</td>
-			<td class="tg-wa1i">2</td>
-			<td class="tg-wa1i">3</td>
-			<td class="tg-wa1i">4</td>
-			<td class="tg-wa1i">5</td>
-			<td class="tg-wa1i">6</td>
-		</tr>
-		<tr>
-			<td class="tg-nrix">1</td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-		</tr>
-		<tr>
-			<td class="tg-nrix">2</td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-		</tr>
-		<tr>
-			<td class="tg-nrix">3</td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-		</tr>
-		<tr>
-			<td class="tg-nrix">...</td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-			<td class="tg-nrix"></td>
-		</tr>
+		<?php
+                include "connection.php";
+
+                $temp = new SQL();
+                $query = "EXEC [Tabel6a_PenelitianDTPSMahasiswa]";
+                $res = $temp->executeStoredProcedure($query,[]);
+
+                $index = 1;
+                $counter = 0;
+                for($x=0; $x<sizeof($res); $x++){
+                    echo "<tr>";
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+					$counter++;
+					echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+					echo "</tr>";
+					
+					
+                    $counter=0;
+                }
+            ?>
 		<tr>
 			<td class="tg-wa1i" colspan="4">Jumlah</td>
 			<td class="tg-nrix"></td>

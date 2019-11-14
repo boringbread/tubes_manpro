@@ -44,7 +44,7 @@
                 <td class="nomor">6</td>
             </tr>
             <?php
-                include "connection.php";
+                include "../../connection.php";
 
                 $temp = new SQL();
                 $query = "EXEC Tabel3b2_PenelitianDTPS";

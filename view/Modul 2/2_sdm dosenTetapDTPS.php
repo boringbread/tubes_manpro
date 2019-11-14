@@ -39,7 +39,7 @@
             </tr>
         
             <?php
-                include "connection.php";
+                include "../../connection.php";
 
                 $temp = new SQL();
                 $query = "EXEC [Tabel3a1_DosenTetapUPPS]";

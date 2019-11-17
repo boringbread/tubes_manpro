@@ -153,22 +153,22 @@
     <div style="overflow-x:auto" id="tabel3a3" class="w3-container w3-hide">
         <table>
         <tr>
-			<th class="tg-wa1i" rowspan="3">Nama Dosen (DT)</th>
-			<th class="tg-wa1i" rowspan="3">DTPS1)</th>
-			<th class="tg-wa1i" colspan="6">Ekuivalen Waktu Mengajar Penuh (EWMP) pada saat TS dalam satuan kredit semester (sks)</th>
-			<th class="tg-wa1i" rowspan="3">Jumlah (sks)</th>
-			<th class="tg-wa1i" rowspan="3">Rata-rata per Semester (sks)</th>
+			<th rowspan="3">Nama Dosen (DT)</th>
+			<th rowspan="3">DTPS1)</th>
+			<th colspan="6">Ekuivalen Waktu Mengajar Penuh (EWMP) pada saat TS dalam satuan kredit semester (sks)</th>
+			<th rowspan="3">Jumlah (sks)</th>
+			<th rowspan="3">Rata-rata per Semester (sks)</th>
 		</tr>
 		<tr>
-			<td class="tg-wa1i" colspan="3">Pendidikan: Pembelajaran dan Pembimbingan</td>
-			<td class="tg-wa1i" rowspan="2">Penelitian</td>
-			<td class="tg-wa1i" rowspan="2">PkM</td>
-			<td class="tg-wa1i" rowspan="2">Tugas Tambahan dan/atau Penunjang</td>
+			<td colspan="3">Pendidikan: Pembelajaran dan Pembimbingan</td>
+			<td rowspan="2">Penelitian</td>
+			<td rowspan="2">PkM</td>
+			<td rowspan="2">Tugas Tambahan dan/atau Penunjang</td>
 		</tr>
 		<tr>
-			<td class="tg-wa1i">PS yang Diakreditasi</td>
-			<td class="tg-wa1i">PS Lain di dalam PT</td>
-			<td class="tg-wa1i">PS Lain di luar PT</td>
+			<td>PS yang Diakreditasi</td>
+			<td>PS Lain di dalam PT</td>
+			<td>PS Lain di luar PT</td>
 		</tr>
 		<?php
                 include "connection.php";
@@ -206,11 +206,9 @@
 					echo "<td>".$res[$x][$counter]."</td>";
                     $counter++;
 					echo "</tr>";
-					
                     $counter=0;
                 }
             ?>
-		
         </table>
     </div>
 </button>
@@ -258,7 +256,6 @@
                         $counter++;
                         echo "<td>".$res[$x][$counter]."</td>";
                         $counter++;
-
                         echo "<td>".$res[$x][$counter]."</td>";
                         $counter++;
                         echo "</tr>";

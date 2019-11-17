@@ -158,7 +158,7 @@
     </button>
 
     <div class="w3-container">
-        <h4>3.b.4 Publikasi Ilmiah DTPS</h4>
+        <h4>3.b.4) Publikasi Ilmiah DTPS</h4>
             <table>
             <tr>
                 <th rowspan="2">Media Publikasi</th>
@@ -231,7 +231,7 @@
     </div>
 
     <div class="w3-container">
-        <h4>3.b.6 Produk/jasa DTPS yang diadopsi oleh industri/masyarakat</h4>
+        <h4>3.b.6) Produk/jasa DTPS yang diadopsi oleh industri/masyarakat</h4>
         <table>
             <tr>
                 <th rowspan = "2">No.</th>
@@ -278,9 +278,23 @@
         </table>
     </div>
 
-    <div class="w3-container">
-
-    </div>
+    <button onclick="showCont('tabel3b7')" class="w3-button w3-block w3-left-align">
+    <h4>3.b.7) Luaran Penelitian/PkM Lainnya oleh DTPS</h4>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Judul Luaran Penelitian/PkM</th>
+                <th>Tahun</th>
+                <th>Keterangan</th>
+                </tr>
+                <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </table>
+    </button>
     <script>
         function showCont(id){
         var x = document.getElementById(id);

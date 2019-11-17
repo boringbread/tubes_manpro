@@ -157,16 +157,16 @@
         </div>
     </button>
 
-    <div class="w3-container">
-        <h4>3.b.4) Publikasi Ilmiah DTPS</h4>
-            <table>
+    <button onclick="showCont('tabel3b4')" class="w3-button w3-block w3-left-align">
+        Tabel 3.b.4) Pagelaran/pameran/presentasi/publikasi Ilmiah DTPS 
+        <div style="overflow-x:auto" id="tabel3b4" class="w3-container w3-hide">            
+        <table>
             <tr>
                 <th rowspan="2">Media Publikasi</th>
                 <th colspan="3">Jumlah Judul</th>
                 <th rowspan="2">Jumlah </th>
             </tr>
 
-        
             </tr>
                 <td>TS-2</td>
                 <td>TS-1</td>
@@ -197,10 +197,12 @@
             ?>
         </table>
     </div>
+</button>
 
-    <div class="w3-container">
-    <h4>3.b.5) Karya ilmiah DTPS yang disitasi dalam 3 tahun terakhir</h4>
-    <table>
+    <button onclick="showCont('tabel3b5')" class="w3-button w3-block w3-left-align">
+        Tabel 3.b.5) Karya ilmiah DTPS yang disitasi dalam 3 tahun terakhir
+        <div style="overflow-x:auto" id="tabel3b5" class="w3-container w3-hide">
+        <table>
         <tr>
             <th rowspan = "2">No.</th>
             <th rowspan = "2">Nama Dosen</th>
@@ -229,9 +231,11 @@
             ?>
         </table>
     </div>
+    </button>
 
-    <div class="w3-container">
-        <h4>3.b.6) Produk/jasa DTPS yang diadopsi oleh industri/masyarakat</h4>
+    <button onclick="showCont('tabel3b6')" class="w3-button w3-block w3-left-align">
+        Tabel 3.b.6) Produk/jasa DTPS yang diadopsi oleh industri/masyarakat 
+        <div style="overflow-x:auto" id="tabel3b6" class="w3-container w3-hide">
         <table>
             <tr>
                 <th rowspan = "2">No.</th>
@@ -239,13 +243,6 @@
                 <th rowspan = "2">Nama Produk/Jasa</th>
                 <th rowspan = "2">Deskripsi Produk/Jasa</th>
                 <th rowspan = "2">Bukti</th>
-            </tr>
-            <tr>
-                <td class="nomor">1</td>
-                <td class="nomor">2</td>
-                <td class="nomor">3</td>
-                <td class="nomor">4</td>
-                <td class="nomor">5</td>
             </tr>
             <tr>
                 <td>2<td>
@@ -277,9 +274,11 @@
             </tr>
         </table>
     </div>
+</button>
 
-    <button onclick="showCont('tabel3b7')" class="w3-button w3-block w3-left-align">
-    <h4>3.b.7) Luaran Penelitian/PkM Lainnya oleh DTPS</h4>
+<button onclick="showCont('tabel3b6')" class="w3-button w3-block w3-left-align">
+    3.b.7) Luaran Penelitian/PkM Lainnya oleh DTPS
+    <div style="overflow-x:auto" id="tabel3b6" class="w3-container w3-hide">
         <table>
             <tr>
                 <th>No.</th>
@@ -294,6 +293,7 @@
                 <th>4</th>
             </tr>
         </table>
+    </div>
     </button>
     <script>
         function showCont(id){

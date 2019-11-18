@@ -1,9 +1,9 @@
 <?php include '../header.php'; ?>
     <style>
         table, th, td {
-            border: 1px solid white;
+            border: 2px solid white;
             border-collapse: collapse;
-            color: black;
+            color: white;
         }
         th, td {
             padding: 5px;
@@ -11,7 +11,6 @@
         }
         body{
             color: white;
-            /* background-color: white; */
         }
         h1{
             color: white
@@ -149,7 +148,7 @@
 </button>
 
 <button onclick="showCont('tabel3a3')" class="w3-button w3-block w3-left-align">
-    Tabel 3.a.3)
+    Tabel 3.a.3) Ekuivalen Waktu Mengajar Penuh (EWMP) Dosen Tetap Perguruan Tinggi 
     <div style="overflow-x:auto" id="tabel3a3" class="w3-container w3-hide">
         <table>
         <tr>
@@ -171,8 +170,6 @@
 			<td>PS Lain di luar PT</td>
 		</tr>
 		<?php
-                include "connection.php";
-
                 $temp = new SQL();
                 $query = "EXEC [Tabel3a1_DosenTetapUPPS]";
                 $res = $temp->executeStoredProcedure($query,[]);
@@ -267,7 +264,7 @@
 </button>
 
 <button onclick="showCont('tabel3a5')" class="w3-button w3-block w3-left-align">
-    tabel 3.a.5)
+Tabel 3.a.5) berikut ini diisi oleh pengusul dari Program Studi pada program Diploma Tiga dan program Sarjana Terapan.
     <div style="overflow-x:auto" id="tabel3a5" class="w3-container w3-hide">
     <table>
             <tr>

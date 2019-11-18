@@ -4,6 +4,8 @@
         color: white;
         
     }
+<<<<<<< HEAD
+=======
 
     table, th, td{
         border: 1px solid white;
@@ -14,6 +16,7 @@
     }
 
 
+>>>>>>> Modul4
 </style>
 <body>
     <div class="tabel1">
@@ -23,24 +26,32 @@
             <th rowspan="2">Tahun Lulus</th>
             <th rowspan="2">Jumlah Lulusan</th>
           <th rowspan="2">Jumlah Lulusan yang Terlacak</th>
-            <th colspan="3">Jumlah Lulusan Terlacak yang Bekerja<br> berdasarkan Tingkat/Ukuran Tempat<br> Kerja/Berwirausaha</th>
+            <th colspan="3">Jumlah Lulusan Terlacak yang Bekerja
+berdasarkan Tingkat/Ukuran Tempat
+Kerja/Berwirausaha</th>
         </tr>
 
        
 
         </tr>
-            <td><b>Lokal/<br> Wilayah/<br> Berwirausaha<br> tidak Berizin</td></b>
-            <td><b>Nasional/<br> Berwirausaha<br> Berizin</td></b>
-            <td><b>Multinasiona/<br> Internasional</td></b>
+            <td style="background-color:lightgrey;"><b>Lokal/
+Wilayah/
+Berwirausaha
+tidak Berizin</td></b>
+            <td  style="background-color:lightgrey;"><b>Nasional/
+Berwirausaha
+Berizin</td></b>
+            <td  style="background-color:lightgrey;"><b>Multinasiona/
+Internasional</td></b>
         </tr>
 
         <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
+            <th  style="background-color:lightgrey;">1</th>
+            <th style="background-color:lightgrey;">2</th>
+            <th  style="background-color:lightgrey;">3</th>
+            <th  style="background-color:lightgrey;">4</th>
+            <th  style="background-color:lightgrey;">5</th>
+            <th  style="background-color:lightgrey;">6</th>
         </tr>
 
         <tr>
@@ -67,7 +78,7 @@
                 <td> </td>
                 <td> </td>
                 <td> </td>
-                <th> </th>
+                <th </th>
         </tr>
 
 
@@ -184,4 +195,3 @@
     </div>
 </body>
 </html>
-<?php include '../footer.php' ?>

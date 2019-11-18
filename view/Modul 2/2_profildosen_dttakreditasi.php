@@ -27,8 +27,7 @@
                 <th>Kesesuaian Bidang Keahlian dengan Mata Kuliah yang Diampu 7)</th>
             </tr>
             <?php
-                include "connection.php";
-
+                include "../../connection.php";
                 $temp = new SQL();
                 $query = "EXEC Tabel3a4_DosenTidakTetapUPPS";
                 $res = $temp->executeStoredProcedure($query,[]);

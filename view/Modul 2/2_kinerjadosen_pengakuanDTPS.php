@@ -31,7 +31,7 @@
                 <th>Internasional</th>
             </tr>
             <?php
-                include "connection.php";
+                include "../../connection.php";
 
                 $temp = new SQL();
                 $query = "EXEC Tabel3b1_RekognisiDTPS";

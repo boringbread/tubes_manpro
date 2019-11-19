@@ -30,36 +30,51 @@
                 <th>Cukup</th>
                 <th>Kurang</th>
             </tr>
-
+            <tr>
+                <td>1</td>
+                <td>Keandalan(reliability): kemampuan dosen, tenaga kependidikan, dan pengelola dalam memberikan pelayanan</td>
+                <td>80%</td>
+                <td>10%</td>
+                <td>5%</td>
+                <td>5%</td>
+                <td></td>
             </tr>
-            
-            <?php
-                include "../../connection.php";
-
-                $temp = new SQL();
-                $query = "";
-                $res = $temp->executeSelectQuery($query,[]);
-
-                $index = 1;
-                $counter = 0;
-                for($x=0; $x<sizeof($res); $x++){
-                    echo "<tr>";
-                    echo "<td>".$index."</td>";
-                    $index++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "<td>".$res[$x][$counter]."</td>";
-                    $counter++;
-                    echo "</tr>";
-                    $counter=0;
-                }
-            ?>
+            <tr>
+                <td>2</td>
+                <td>Daya tanggap (responsiveness): kemauan dari dosen, tenaga kependidikan,dan pengelola dalam membantu mahasiswa dan memberikan jasa dengan cepat</td>
+                <td>60%</td>
+                <td>20%</td>
+                <td>15%</td>
+                <td>5%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kepastian (assurance): kemampuan dosen, tenaga kependidikan,dan pengelola untuk memberi keyakinan kepada mahasiswa bahwa pelayanan yang diberikan telah sesuai dengan ketentuan</td>
+                <td>75%</td>
+                <td>20%</td>
+                <td>15%</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Empati (empathy): kesediaan/kepedulian dosen, tenaga kependidikan,dan pengelola untuk memberi perhatian kepada mahasiswa</td>
+                <td>65%</td>
+                <td>20%</td>
+                <td>10%</td>
+                <td>5%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Tangible: penilaian mahasiswa terhadap kecukupan, aksesibitas, kualitas sarana dan prasarana</td>
+                <td>70%</td>
+                <td>20%</td>
+                <td>10%</td>
+                <td></td>
+                <td></td>
+            </tr>
         </table>
     </div>
 </body>

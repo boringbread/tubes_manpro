@@ -33,8 +33,8 @@
             <tr>
                 <td>1</td>
                 <td>Keandalan(reliability): kemampuan dosen, tenaga kependidikan, dan pengelola dalam memberikan pelayanan</td>
-                <td>75%</td>
-                <td>15%</td>
+                <td>80%</td>
+                <td>10%</td>
                 <td>5%</td>
                 <td>5%</td>
                 <td></td>
@@ -69,9 +69,9 @@
             <tr>
                 <td>5</td>
                 <td>Tangible: penilaian mahasiswa terhadap kecukupan, aksesibitas, kualitas sarana dan prasarana</td>
-                <td>80%</td>
-                <td>20%</td>
-                <td></td>
+                <td>70%</td>
+                <td>25%</td>
+                <td>5&</td>
                 <td></td>
                 <td></td>
             </tr>

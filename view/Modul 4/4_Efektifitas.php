@@ -205,7 +205,7 @@
     </div>
 
     <div id="dayasaing"  >
-    <h1><b>Daaya Saing Lulusan Program Diploma Tiga</b></h1>
+    <h1><b>Daya Saing Lulusan Program Diploma Tiga</b></h1>
     <table>
         <tr>
             <th class="w3-flat-belize-hole" rowspan="2">Tahun Lulus</th>
@@ -242,6 +242,91 @@
             <td>7</td>
             <td>3</td>
             <td>5</td>
+         </tr>
+        </tr>
+    </table>
+    </div>
+    <div id="divrafi">
+    <h1><b>Program Sarjana Terapan</b></h1>
+    <table>
+        <tr>
+            <th class="w3-flat-belize-hole" rowspan="2">Tahun Lulus</th>
+            <th class="w3-flat-belize-hole" rowspan="2">Jumlah lulusan </th>
+            <th class="w3-flat-belize-hole" rowspan="2">Jumlah Lulusan Terlacak </th>
+            <th class="w3-flat-belize-hole" colspan="3">Jumlah Lulusan Terlacak dengan Waktu Tunggu Mendapatakan Pekerjaan</th>
+        </tr>
+        <tr>
+            <th class="w3-flat-belize-hole">WT < 3 bulan</th>
+            <th class="w3-flat-belize-hole"> 3 <= WT <= 6 bulan </th>
+            <th class="w3-flat-belize-hole">WT > 6 bulan</th>
+        </tr>
+        <tr>
+            <td>TS-4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>TS-3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>TS-2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+        </tr>
+    </table>
+    </div>
+
+    <div id="divrafi"  >
+    <h1><b>Kesesuaian Bidang Kerja Lulusan</b></h1>
+    <table>
+        <tr>
+            <th class="w3-flat-belize-hole" rowspan="2">Tahun Lulus</th>
+            <th class="w3-flat-belize-hole" rowspan="2">Jumlah lulusan </th>
+            <th class="w3-flat-belize-hole" rowspan="2">Jumlah Lulusan Terlacak </th>
+            <th class="w3-flat-belize-hole" colspan="3">Jumlah Lulusan Terlacak dengan Tingkat Kesesuaian Bidang Kerja</th>
+        </tr>
+        <tr>
+            <th class="w3-flat-belize-hole">Rendah</th>
+            <th class="w3-flat-belize-hole">Sedang</th>
+            <th class="w3-flat-belize-hole">Tinggi</th>
+        </tr>
+        <tr>
+            <td>TS-4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>TS-3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>TS-2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
          </tr>
         </tr>
     </table>

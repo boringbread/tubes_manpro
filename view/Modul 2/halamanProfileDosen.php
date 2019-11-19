@@ -1,9 +1,9 @@
 <?php include '../header.php'; ?>
     <style>
         table, th, td {
-            border: 1px solid white;
+            border: 2px solid white;
             border-collapse: collapse;
-            color: black;
+            color: white;
         }
         th, td {
             padding: 5px;
@@ -11,7 +11,6 @@
         }
         body{
             color: white;
-            /* background-color: white; */
         }
         h1{
             color: white
@@ -149,9 +148,64 @@
 </button>
 
 <button onclick="showCont('tabel3a3')" class="w3-button w3-block w3-left-align">
-    Tabel 3.a.3)
+    Tabel 3.a.3) Ekuivalen Waktu Mengajar Penuh (EWMP) Dosen Tetap Perguruan Tinggi 
     <div style="overflow-x:auto" id="tabel3a3" class="w3-container w3-hide">
         <table>
+        <tr>
+			<th rowspan="3">Nama Dosen (DT)</th>
+			<th rowspan="3">DTPS1)</th>
+			<th colspan="6">Ekuivalen Waktu Mengajar Penuh (EWMP) pada saat TS dalam satuan kredit semester (sks)</th>
+			<th rowspan="3">Jumlah (sks)</th>
+			<th rowspan="3">Rata-rata per Semester (sks)</th>
+		</tr>
+		<tr>
+			<td colspan="3">Pendidikan: Pembelajaran dan Pembimbingan</td>
+			<td rowspan="2">Penelitian</td>
+			<td rowspan="2">PkM</td>
+			<td rowspan="2">Tugas Tambahan dan/atau Penunjang</td>
+		</tr>
+		<tr>
+			<td>PS yang Diakreditasi</td>
+			<td>PS Lain di dalam PT</td>
+			<td>PS Lain di luar PT</td>
+		</tr>
+		<?php
+                $temp = new SQL();
+                $query = "EXEC [Tabel3a1_DosenTetapUPPS]";
+                $res = $temp->executeStoredProcedure($query,[]);
+
+                $index = 0;
+                $counter = 0;
+                for($x=0; $x<sizeof($res); $x++){
+                    echo "<tr>";
+					echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+					$counter++;
+					echo "<td>".$res[$x][$counter]."</td>";
+					$counter++;
+					echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+                    echo "<td>".$res[$x][$counter]."</td>";
+					$counter++;
+					echo "<td>".$res[$x][$counter]."</td>";
+                    $counter++;
+					echo "</tr>";
+                    $counter=0;
+                }
+            ?>
         </table>
     </div>
 </button>
@@ -199,7 +253,6 @@
                         $counter++;
                         echo "<td>".$res[$x][$counter]."</td>";
                         $counter++;
-
                         echo "<td>".$res[$x][$counter]."</td>";
                         $counter++;
                         echo "</tr>";
@@ -211,9 +264,21 @@
 </button>
 
 <button onclick="showCont('tabel3a5')" class="w3-button w3-block w3-left-align">
-    tabel 3.a.5)
+Tabel 3.a.5) berikut ini diisi oleh pengusul dari Program Studi pada program Diploma Tiga dan program Sarjana Terapan.
     <div style="overflow-x:auto" id="tabel3a5" class="w3-container w3-hide">
-
+    <table>
+            <tr>
+                <th>No.</th>
+                <th>Nama Dosen Industri/Praktisi</th>
+                <th>NIDK 1)</th>
+                <th>Perusahaan / Indsutri 2)</th>
+                <th>Pendidikan Tertinggi</th>
+                <th>Bidang Keahlian 3)</th>
+                <th>Sertifikat Profesi/Kompetensi/Industri 4)</th>
+                <th>Mata Kuliah yang Diampu 5)</th>
+                <th>Bobot Kredit (sks)</th>
+            </tr>
+    </table>
     </div>
 </button>
 

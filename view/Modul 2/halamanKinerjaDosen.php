@@ -1,13 +1,13 @@
 <?php include '../header.php'; ?>
     <style>
         table, th, td {
-            border: 1px solid black;
-            border: 1px solid black;
+            border: 2px solid white;
             border-collapse: collapse;
             color : white;
         }
         th, td {
             padding: 5px;
+            text-align: left;
         }
         body{
             color: white;
@@ -45,8 +45,6 @@
                     $counter = 0;
                     for($x=0; $x<sizeof($res); $x++){
                         echo "<tr>";
-                        // echo "<td>".$index."</td>";
-                        // $index++;
                         echo "<td>".$res[$x][$counter]."</td>";
                         $counter++;
                         echo "<td>".$res[$x][$counter]."</td>";
@@ -89,9 +87,12 @@
                     $temp = new SQL();
                     $query = "EXEC Tabel3b2_PenelitianDTPS";
                     $res = $temp->executeStoredProcedure($query,[]);
+                    $index = 1;
                     $counter = 0;
                     for($x=0; $x<sizeof($res); $x++){
                         echo "<tr>";
+                        echo "<td>".$index."</td>";
+                        $index++;
                         echo "<td>".$res[$x][$counter]."</td>";
                         $counter++;
                         echo "<td>".$res[$x][$counter]."</td>";
@@ -157,16 +158,16 @@
         </div>
     </button>
 
-    <div class="w3-container">
-        <h4>3.b.4 Publikasi Ilmiah DTPS</h4>
-            <table>
+    <button onclick="showCont('tabel3b4')" class="w3-button w3-block w3-left-align">
+        Tabel 3.b.4) Pagelaran/pameran/presentasi/publikasi Ilmiah DTPS 
+        <div style="overflow-x:auto" id="tabel3b4" class="w3-container w3-hide">            
+        <table>
             <tr>
                 <th rowspan="2">Media Publikasi</th>
                 <th colspan="3">Jumlah Judul</th>
                 <th rowspan="2">Jumlah </th>
             </tr>
 
-        
             </tr>
                 <td>TS-2</td>
                 <td>TS-1</td>
@@ -197,10 +198,12 @@
             ?>
         </table>
     </div>
+</button>
 
-    <div class="w3-container">
-    <h4>3.b.5) Karya ilmiah DTPS yang disitasi dalam 3 tahun terakhir</h4>
-    <table>
+    <button onclick="showCont('tabel3b5')" class="w3-button w3-block w3-left-align">
+        Tabel 3.b.5) Karya ilmiah DTPS yang disitasi dalam 3 tahun terakhir
+        <div style="overflow-x:auto" id="tabel3b5" class="w3-container w3-hide">
+        <table>
         <tr>
             <th rowspan = "2">No.</th>
             <th rowspan = "2">Nama Dosen</th>
@@ -212,26 +215,29 @@
             $query = "EXEC Tabel3b5_KaryaIlmiahDistasi";
             $res = $temp->executeStoredProcedure($query,[]);
             $counter = 0;
-            for($x=0; $x<sizeof(res); $x++){
+    
+            for($x=0; $x<sizeof($res); $x++){
                 echo "<tr>";
-                echo "<td>".$res[$res][$counter]."</td>";
+                echo "<td>".$res[$x][$counter]."</td>";
                 $counter++;
-                echo "<td>".$res[$res][$counter]."</td>";
+                echo "<td>".$res[$x][$counter]."</td>";
                 $counter++;
-                echo "<td>".$res[$res][$counter]."</td>";
+                echo "<td>".$res[$x][$counter]."</td>";
                 $counter++;
-                echo "<td>".$res[$res][$counter]."</td>";
+                echo "<td>".$res[$x][$counter]."</td>";
                 $counter++;
-                echo "<td>".$res[$res][$counter]."</td>";
+                echo "<td>".$res[$x][$counter]."</td>";
                 $counter=0;
                 echo "</tr>";
             }
             ?>
         </table>
     </div>
+    </button>
 
-    <div class="w3-container">
-        <h4>3.b.6 Produk/jasa DTPS yang diadopsi oleh industri/masyarakat</h4>
+    <button onclick="showCont('tabel3b6')" class="w3-button w3-block w3-left-align">
+        Tabel 3.b.6) Produk/jasa DTPS yang diadopsi oleh industri/masyarakat 
+        <div style="overflow-x:auto" id="tabel3b6" class="w3-container w3-hide">
         <table>
             <tr>
                 <th rowspan = "2">No.</th>
@@ -240,47 +246,23 @@
                 <th rowspan = "2">Deskripsi Produk/Jasa</th>
                 <th rowspan = "2">Bukti</th>
             </tr>
+        </table>
+    </div>
+</button>
+
+<button onclick="showCont('tabel3b7')" class="w3-button w3-block w3-left-align">
+    3.b.7) Luaran Penelitian/PkM Lainnya oleh DTPS
+    <div style="overflow-x:auto" id="tabel3b7" class="w3-container w3-hide">
+        <table>
             <tr>
-                <td class="nomor">1</td>
-                <td class="nomor">2</td>
-                <td class="nomor">3</td>
-                <td class="nomor">4</td>
-                <td class="nomor">5</td>
-            </tr>
-            <tr>
-                <td>2<td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>3<td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>4<td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>5<td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th>No.</th>
+                <th>Judul Luaran Penelitian/PkM</th>
+                <th>Tahun</th>
+                <th>Keterangan</th>
             </tr>
         </table>
     </div>
-
-    <div class="w3-container">
-
-    </div>
+    </button>
     <script>
         function showCont(id){
         var x = document.getElementById(id);

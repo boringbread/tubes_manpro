@@ -262,28 +262,28 @@
         </tr>
         <tr>
             <td>TS-4</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>20</td>
+            <td>15</td>
+            <td>10</td>
+            <td>3</td>
+            <td>2</td>
 
         </tr>
         <tr>
             <td>TS-3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>30</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>5</td>
         </tr>
          <tr>
             <td>TS-2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>25</td>
+            <td>17</td>
+            <td>5</td>
+            <td>7</td>
+            <td>5</td>
          </tr>
         </tr>
     </table>
@@ -305,28 +305,28 @@
         </tr>
         <tr>
             <td>TS-4</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>3</td>
+            <td>2</td>
 
         </tr>
         <tr>
             <td>TS-3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>30</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>5</td>
         </tr>
          <tr>
             <td>TS-2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>25</td>
+            <td>17</td>
+            <td>5</td>
+            <td>7</td>
+            <td>5</td>
          </tr>
         </tr>
     </table>

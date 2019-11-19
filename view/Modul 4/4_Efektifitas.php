@@ -205,7 +205,7 @@
     </div>
 
     <div id="dayasaing"  >
-    <h1><b>Daya Saing Lulusan Program Diploma Tiga</b></h1>
+    <h1><b>Daya Saing Lulusan Program Sarjana</b></h1>
     <table>
         <tr>
             <th class="w3-flat-belize-hole" rowspan="2">Tahun Lulus</th>
@@ -214,9 +214,9 @@
             <th class="w3-flat-belize-hole" colspan="3">Jumlah Lulusan Terlacak dengan Waktu Tunggu Mendapatakan Pekerjaan</th>
         </tr>
         <tr>
-            <th class="w3-flat-belize-hole">WT < 3 bulan</th>
-            <th class="w3-flat-belize-hole"> 3 <= WT <= 6 bulan </th>
-            <th class="w3-flat-belize-hole">WT > 6 bulan</th>
+            <th class="w3-flat-belize-hole">WT < 6 bulan</th>
+            <th class="w3-flat-belize-hole"> 6 <= WT <= 18 bulan </th>
+            <th class="w3-flat-belize-hole">WT > 18 bulan</th>
         </tr>
         <tr>
             <td>TS-4</td>
@@ -326,7 +326,7 @@
             <td>17</td>
             <td>5</td>
             <td>7</td>
-            <td>5</td>
+            <td>5</td>  
          </tr>
         </tr>
     </table>

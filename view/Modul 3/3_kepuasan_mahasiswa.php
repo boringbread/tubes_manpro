@@ -70,8 +70,8 @@
                 <td>5</td>
                 <td>Tangible: penilaian mahasiswa terhadap kecukupan, aksesibitas, kualitas sarana dan prasarana</td>
                 <td>70%</td>
-                <td>25%</td>
-                <td>5&</td>
+                <td>20%</td>
+                <td>10%</td>
                 <td></td>
                 <td></td>
             </tr>

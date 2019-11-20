@@ -6,6 +6,7 @@
 <style>
 body{
  font-family:Arial;
+ color: white;
 }
 table, th, td {
   border: 1px solid black;
@@ -19,11 +20,11 @@ td{
 }
 th{
 	text-align: center;
-	background-color: lightgray;
+	background-color: black;
 }
 #small{
 	font-size:12px;
-	background-color: lightgray;
+	background-color: black;
     text-align:center	
 }
 #number{

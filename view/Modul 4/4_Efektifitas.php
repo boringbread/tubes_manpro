@@ -28,36 +28,36 @@
         </tr>
         <tr>
             <td>TS-4</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>89</td>
+            <td>89</td>
+            <td>88</td>
+            <td>70</td>
+            <td>65</td>
+            <td>10</td>
+            <td>10</td>
+            <td>4,5 Tahun</td>
         </tr>
         <tr>
             <td>TS-3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>99</td>
+            <td>89</td>
+            <td>78</td>
+            <td>77</td>
+            <td>65</td>
+            <td>12</td>
+            <td>12</td>
+            <td>4 Tahun</td>
         </tr>
          <tr>
             <td>TS-2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>89</td>
+            <td>89</td>
+            <td>88</td>
+            <td>70</td>
+            <td>65</td>
+            <td>10</td>
+            <td>10</td>
+            <td>4,5 Tahun</td>
          </tr>
         </tr>
     </table>
@@ -332,4 +332,7 @@
     </table>
     </div>
 </body>
+<?php 
+    include '../footer.php';
+ ?>
 </html>

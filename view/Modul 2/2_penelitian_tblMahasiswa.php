@@ -68,5 +68,5 @@
 				<td class="tg-nrix"></td>
 			</tr>
 		</table>
-	</body
+	</body>
 </html>
